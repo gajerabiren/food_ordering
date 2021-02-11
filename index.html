@@ -5,18 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Ordering</title>
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- bootstrap link -->
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-----font-awesome-link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
   </head>
   <body>
-    <h2>JavaScript in Body two</h2>
+    <!-------------------------------------top-nav-section--------------------------------->
+    <section class="top-nav-section">
+      <p class="top-nav-text mb-0">
+        We're open and available for takeaway delivery.<a href="#">Order Now</a>
+      </p>
+    </section>
 
-    <p id="demo">A Paragraph.</p>
+    <!----------------------------------main-navbar-section--------------------------------->
 
-    <button type="button" onclick="myFunction()">Try it</button>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light disp-navbar">
+      <div class="container">
+        <div class="logo-div">
+          <a class="navbar-brand" href="./index.php">
+            <img
+              class="logo-nav-image"
+              src="./assets/images/demo.png"
+              alt="web-Logo"
+            />
+          </a>
+        </div>
 
-    <script>
-      function myFunction() {
-        document.getElementById("demo").innerHTML = "Paragraph changed.";
-      }
-    </script>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#">Order</a>
+            </li>
+
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#">Company</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-contact" href="#">Contact </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cart" href="#">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-----------------------------section-one-burger----------------------------->
+
+    <section class="food-order-section">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="left-text-div-food-order">
+                <p class="main-food-order-text">
+                  Beautiful food & takeaway,
+                  <span class="green-text">delivered</span> to your door.
+                </p>
+                <p class="small-food-order-text">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy
+                  text ever since the 1500.
+                </p>
+                  <div class="button-division mt-5">
+                    <button class="place-order-button">Place an Order</button>
+                  </div>
+               
+                <div class="my-3">
+                  <img src="./assets/images/place-order-image.svg" alt="" />
+                </div>
+                <p class="review-text">
+                  <span class="green-text">4.8 out of 5</span> based on 2000+
+                  reviews
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image-burger-div">
+                <img src="./assets/images/first-section.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
   </body>
 </html>

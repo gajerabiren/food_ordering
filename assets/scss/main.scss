@@ -1,0 +1,51 @@
+@import "variable";
+@import "mixin";
+
+//navigation-bar and footer
+
+@import "navigation";
+
+
+//section-one
+
+.main-food-order-text{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1em;
+}
+.small-food-order-text{
+    color: #546285;
+    font-size: 18px;
+    line-height: 1.34;
+    font-weight: 400;
+}
+
+.green-text{
+ color: #35b8be;
+}
+
+:focus{
+    
+    outline: none !important;
+}
+.place-order-button{
+    font-size: 18px;
+    background-image: url("../images/place-order-bg.svg");
+    padding: 14px 30px;
+    background-color: $green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.review-text{
+    font-size: 16px;
+    color: #08090a;
+}
+
+.food-order-section{
+    background-image: url("../images/bg-first-section.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 50px;
+}

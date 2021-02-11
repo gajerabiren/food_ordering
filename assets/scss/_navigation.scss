@@ -1,0 +1,20 @@
+.top-nav-section{
+    background-image: url("../images/top-nav-image.svg");
+    background-color: #35b8be;
+}
+.top-nav-text{
+    display: flex;
+    justify-content: center;
+    padding: 12px 0px;
+    color: white;
+    letter-spacing: 0.03em;
+    font-size: 15px;
+}
+
+
+.cart i {
+    background-image:url("../images/cart-background-image.svg");
+    padding: 10px;
+    background-color: yellow;
+    
+}

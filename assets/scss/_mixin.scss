@@ -1,0 +1,19 @@
+@mixin main-text {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+@mixin section-top-bottom-margin {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@mixin section-top-bottom-margin-remove {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@mixin responsive-main-text {
+  font-size: 48px;
+  text-align: center;
+}

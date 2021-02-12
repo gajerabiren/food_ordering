@@ -1,1 +1,11 @@
+//Responsive
+$desktop: 'only screen and (min-width: 1400px)';
+$ipad-pro: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$ipad: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$surface: 'only screen and (min-width: 426px) and (max-width: 767px)';
+$mobile: 'only screen and (min-width: 281px) and (max-width: 425px)';
+$fold: 'only screen and (max-width: 280px)';
+
+//colors
 $green : #35b8be;
+$big-text : 58px;

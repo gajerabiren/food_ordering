@@ -185,4 +185,12 @@
 .three-images {
   max-width: 100%;
 }
+
+.browse-explain-text {
+  color: #546285;
+  font-size: 18px;
+  line-height: 1.34;
+  font-weight: 400;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

@@ -216,17 +216,390 @@
 
     <section class="browse-menu-section">
       <div class="container">
-        <p class="how-it-works-text">
+        <p class="how-it-works-text text-center">
           Browse our menu
         </p>        
         <p class="browse-explain-text">
-          Use our menu to place an order online, or phone our store to place a pickup order. Fast and fresh food.
+          Use our menu to place an order online, or phone our store to <br>
+          place a pickup order. Fast and fresh food.
         </p>
         <div class="row">
           <div class="button-division my-5 d-block mx-auto">
-            <button class="place-order-button">Burgers</button>
-            <button class="place-order-button mx-4">Slides</button>
-            <button class="place-order-button">Drinks</button>
+            <button class="browse-button active-one" onclick="filterSelection('only-burger')">Burgers</button>
+            <button class="browse-button mx-lg-4" onclick="filterSelection('only-sides')">Slides</button>
+            <button class="browse-button" onclick="filterSelection('only-drinks')">Drinks</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 p-3 only-burger">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/burger-dreams.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Burger Dreams
+                  </p>
+                  <p class="burger-price">
+                    $ 9.20 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-6 p-3 only-burger">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/burger-waldo.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Burger Waldo
+                  </p>
+                  <p class="burger-price">
+                    $ 10.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-3 only-burger">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/burger-cali.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Burger Cali
+                  </p>
+                  <p class="burger-price">
+                    $ 8.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-3 only-burger">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/burger-bacon-bali.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Burger Bacon Buddy
+                  </p>
+                  <p class="burger-price">
+                    $ 9.99 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-3 only-burger">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/burger-spicy.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Burger Spicy
+                  </p>
+                  <p class="burger-price">
+                    $ 9.20 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-3 only-burger">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/burger-classic.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Burger Classic
+                  </p>
+                  <p class="burger-price">
+                    $ 8.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+
+          <!-------------------------------------------Sides----------------------------->
+          <div class="col-lg-6 p-3 only-sides">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/Salad-Ceaser.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Salad Ceaser
+                  </p>
+                  <p class="burger-price">
+                    $ 6.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-3 only-sides">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/Beans-slow-cooked.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Beans Slow Cooked
+                  </p>
+                  <p class="burger-price">
+                    $ 4.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-3 only-sides">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/fries-cheese.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Fried Cheese
+                  </p>
+                  <p class="burger-price">
+                    $ 5.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-3 only-sides">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/fries-rustic.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Fries Rustic
+                  </p>
+                  <p class="burger-price">
+                    $ 4.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+
+          <!--------------------------Drinks----------------------------->
+          <div class="col-lg-6 p-3 only-drinks">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/drink-fig-lime.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Drink Fig & Lime
+                  </p>
+                  <p class="burger-price">
+                    $ 4.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-3 only-drinks">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/drink-liquor.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Drink Liquor
+                  </p>
+                  <p class="burger-price">
+                    $ 7.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-3 only-drinks">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/drink-lime.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Drink Lime
+                  </p>
+                  <p class="burger-price">
+                    $ 4.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-3 only-drinks">
+            <div class="main-burger-div p-4">
+              <div class="burger_image_div">
+                <img class="burger_image" src="./assets/images/drink-cola.png" alt="image">
+              </div>
+              <div class="burger-explain-div">
+                <div class="burger-item-price">
+                  <p class="burger-type">
+                    Drink Cola
+                  </p>
+                  <p class="burger-price">
+                    $ 3.00 USD
+                  </p>
+                </div>
+                <p class="burger-explanation">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                
+                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+                <button type="button" class="btn btn-info">Add To Cart</button>
+               
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>

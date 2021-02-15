@@ -8,6 +8,11 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
+@mixin section-top-bottom-margin-two-hundread {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
 @mixin section-top-bottom-margin-remove {
   margin-top: 0px;
   margin-bottom: 0px;

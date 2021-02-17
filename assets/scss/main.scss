@@ -152,9 +152,14 @@
   @include section-top-bottom-margin;
   background-image: url("../images/browse-menu-bg.svg");
   background-repeat: no-repeat;
-  background-size: 96% 50%;
+  background-size: 96% 55%;
   padding: 140px 3%;
-  background-position: top
+  background-position: center;
+  @media #{$mobile} {
+    @include section-top-bottom-margin-remove;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .browse-explain-text{
@@ -181,6 +186,14 @@
   border: none;
   
   border-radius: 5px;
+
+  @media #{$mobile , $fold , $surface}{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media #{$ipad}{
+    margin-right: 20px;
+  }
 }
 
 .main-burger-div  {
@@ -195,6 +208,9 @@
   border-width: 1px;
   border-radius: 6px;
  }
+ @media #{$mobile ,$fold}{
+   flex-wrap: wrap;
+ }
 }
 
 .item-quatity {
@@ -206,11 +222,18 @@
     margin-right: 20px;
     padding: 8px;
     vertical-align: middle;
+    @media #{$fold} {
+      margin-right: 7px;
+    }
 }
 
 .burger-item-price{
   display: flex;
   justify-content: space-between;
+  @media #{$fold}{
+    display: block;
+  }
+
 }
 
 .burger_image{
@@ -218,4 +241,130 @@
   border-radius: 6px;
   margin-right: 30px;
   margin-top: 10px;
+  @media #{$mobile ,$fold}{
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.only{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+//order-online-section
+
+.order-online-section{
+  @media#{$mobile} {
+    @include section-top-bottom-margin;
+  }
+}
+
+.order-online-image{
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.second-image-order-online{
+  position: absolute;
+  
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+
+    @media #{$surface} {
+      left: 4%;
+    }
+}
+
+
+.green-main-text{
+  @include main-text;
+  color: $green;
+  @media #{$mobile} {
+    @include responsive-main-text;
+  }
+}
+
+.order-online-explain-text{
+  text-align: center;
+}
+.mobile-faq{
+  width: 100%;
+}
+
+.order-online-text-div{
+  margin-top: 140px;
+  
+}
+
+
+//local-business-image-section
+
+.local-business-container{
+  max-width: 1300px !important ;
+}
+
+.local-business-image{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.order-now-button{
+  font-size: 18px;
+    
+    padding: 14px 30px;
+    background-color: white;
+    border: none;
+    color: $green;
+    border-radius: 5px;
+}
+
+.support-local-business-text{
+  color: white;
+}
+
+.support-local-business-text{
+  @include main-text;
+}
+
+.only-support-text{
+  color:#1b9097;
+}
+.support-good-friends-div{
+  background-color: $green;
+  padding: 184px 60px;
+  @media #{$mobile} {
+    padding: 59px 15px;
+  }
+  @media #{$mobile} {
+
+  }
+}
+
+.local-business-image{
+  background-image: url("../images/local-business-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
+  @media #{$mobile} {
+    background-size: cover;
+    height: 267px;
+    background-clip: content-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @media #{$ipad , $surface} {
+    background-size: cover;
+    height: 520px;
+    background-clip: content-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }

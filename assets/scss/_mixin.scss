@@ -1,5 +1,5 @@
 @mixin main-text {
-  font-size: 58px;
+  font-size: 55px;
   font-weight: 700;
   line-height: 1em;
 }
@@ -19,6 +19,6 @@
 }
 
 @mixin responsive-main-text {
-  font-size: 48px;
+  font-size: 46px;
   text-align: center;
 }

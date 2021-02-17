@@ -135,7 +135,7 @@
 }
 
 .fresh-products-green-text {
-  font-size: 58px;
+  font-size: 55px;
   font-weight: 700;
   line-height: 1em;
   color: #35b8be;
@@ -143,7 +143,7 @@
 
 @media only screen and (min-width: 281px) and (max-width: 425px), only screen and (min-width: 426px) and (max-width: 767px) {
   .fresh-products-green-text {
-    font-size: 48px;
+    font-size: 46px;
     text-align: center;
   }
 }
@@ -155,7 +155,7 @@
 }
 
 .how-it-works-text {
-  font-size: 58px;
+  font-size: 55px;
   font-weight: 700;
   line-height: 1em;
   color: #35b8be;
@@ -191,9 +191,18 @@
   margin-bottom: 100px;
   background-image: url("../images/browse-menu-bg.svg");
   background-repeat: no-repeat;
-  background-size: 96% 50%;
+  background-size: 96% 55%;
   padding: 140px 3%;
-  background-position: top;
+  background-position: center;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 425px) {
+  .browse-menu-section {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .browse-explain-text {
@@ -218,6 +227,19 @@
   border-radius: 5px;
 }
 
+@media only screen and (min-width: 281px) and (max-width: 425px), only screen and (max-width: 280px), only screen and (min-width: 426px) and (max-width: 767px) {
+  .browse-button {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .browse-button {
+    margin-right: 20px;
+  }
+}
+
 .main-burger-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,6 +257,13 @@
   border-radius: 6px;
 }
 
+@media only screen and (min-width: 281px) and (max-width: 425px), only screen and (max-width: 280px) {
+  .main-burger-div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .item-quatity {
   width: 60px;
   height: 36px;
@@ -246,6 +275,12 @@
   vertical-align: middle;
 }
 
+@media only screen and (max-width: 280px) {
+  .item-quatity {
+    margin-right: 7px;
+  }
+}
+
 .burger-item-price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,10 +290,154 @@
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 280px) {
+  .burger-item-price {
+    display: block;
+  }
+}
+
 .burger_image {
   width: 120px;
   border-radius: 6px;
   margin-right: 30px;
   margin-top: 10px;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 425px), only screen and (max-width: 280px) {
+  .burger_image {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.only {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 425px) {
+  .order-online-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.order-online-image {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.second-image-order-online {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .second-image-order-online {
+    left: 4%;
+  }
+}
+
+.green-main-text {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1em;
+  color: #35b8be;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 425px) {
+  .green-main-text {
+    font-size: 46px;
+    text-align: center;
+  }
+}
+
+.order-online-explain-text {
+  text-align: center;
+}
+
+.mobile-faq {
+  width: 100%;
+}
+
+.order-online-text-div {
+  margin-top: 140px;
+}
+
+.local-business-container {
+  max-width: 1300px !important;
+}
+
+.local-business-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.order-now-button {
+  font-size: 18px;
+  padding: 14px 30px;
+  background-color: white;
+  border: none;
+  color: #35b8be;
+  border-radius: 5px;
+}
+
+.support-local-business-text {
+  color: white;
+}
+
+.support-local-business-text {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.only-support-text {
+  color: #1b9097;
+}
+
+.support-good-friends-div {
+  background-color: #35b8be;
+  padding: 184px 60px;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 425px) {
+  .support-good-friends-div {
+    padding: 59px 15px;
+  }
+}
+
+.local-business-image {
+  background-image: url("../images/local-business-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 425px) {
+  .local-business-image {
+    background-size: cover;
+    height: 267px;
+    background-clip: content-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 426px) and (max-width: 767px) {
+  .local-business-image {
+    background-size: cover;
+    height: 520px;
+    background-clip: content-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

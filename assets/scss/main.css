@@ -56,6 +56,12 @@
   font-size: 18px;
 }
 
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .footer-logo-text {
+    margin-bottom: 24px;
+  }
+}
+
 .footer-links {
   color: #546285;
   font-size: 16px;
@@ -88,7 +94,7 @@
           justify-content: space-between;
 }
 
-@media only screen and (min-width: 281px) and (max-width: 425px) {
+@media only screen and (min-width: 281px) and (max-width: 425px), only screen and (max-width: 280px) {
   .footer-icon-div {
     display: block;
   }
@@ -297,7 +303,7 @@
   background-position: center;
 }
 
-@media only screen and (min-width: 281px) and (max-width: 425px) {
+@media only screen and (min-width: 281px) and (max-width: 425px), only screen and (max-width: 280px) {
   .browse-menu-section {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -515,6 +521,12 @@
   }
 }
 
+@media only screen and (max-width: 280px) {
+  .support-good-friends-div {
+    padding: 40px 8px;
+  }
+}
+
 .local-business-image {
   background-image: url("../images/local-business-image.png");
   background-size: cover;
@@ -537,6 +549,15 @@
   .local-business-image {
     background-size: cover;
     height: 520px;
+    background-clip: content-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .local-business-image {
+    height: 200px;
     background-clip: content-box;
     padding-top: 15px;
     padding-bottom: 15px;

@@ -1,752 +1,742 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Ordering</title>
-    <link rel="stylesheet" href="./assets/scss/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <!-- bootstrap link -->
-    <!-- Latest compiled and minified CSS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-----font-awesome-link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-------------------------------------top-nav-section--------------------------------->
-    <section class="top-nav-section">
-      <p class="top-nav-text mb-0">
-        We're open and available for takeaway delivery.<a href="#">Order Now</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Ordering</title>
+  <link rel="stylesheet" href="./assets/scss/main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- bootstrap link -->
+  <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-----font-awesome-link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+  <!-------------------------------------top-nav-section--------------------------------->
+  <section class="top-nav-section">
+    <p class="top-nav-text mb-0">
+      We're open and available for takeaway delivery.<a href="#">Order Now</a>
+    </p>
+  </section>
+
+  <!----------------------------------main-navbar-section--------------------------------->
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light disp-navbar">
+    <div class="container">
+      <div class="logo-div">
+        <a class="navbar-brand" href="./index.php">
+          <img class="logo-nav-image" src="./assets/images/demo.png" alt="web-Logo" />
+        </a>
+      </div>
+
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Order</a>
+          </li>
+
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">Company</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-contact" href="#">Contact </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cart" href="#">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-----------------------------section-one-burger----------------------------->
+
+  <section class="food-order-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="left-text-div-food-order">
+            <p class="main-food-order-text">
+              Beautiful food & takeaway,
+              <span class="green-text">delivered</span> to your door.
+            </p>
+            <p class="small-food-order-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500.
+            </p>
+            <div class="button-division mt-5">
+              <button class="place-order-button">Place an Order</button>
+            </div>
+
+            <div class="my-3">
+              <img src="./assets/images/place-order-image.svg" alt="" />
+            </div>
+            <p class="review-text">
+              <span class="green-text">4.8 out of 5</span> based on 2000+
+              reviews
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image-burger-div">
+            <img src="./assets/images/first-section.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------section-two-fresh-products------------------>
+
+  <section class="fresh-products-section">
+    <div class="container mx-lg-2">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="left-main-text-fresh-products-div">
+            <p class="fresh-products-green-text">
+              The home of <br />
+              fresh products
+            </p>
+            <p class="small-food-order-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500.
+            </p>
+            <div class="button-division my-5">
+              <button class="place-order-button">Learn about us</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image-burger-div">
+            <img src="./assets/images/fresh-products-image.png" alt="fresh-products-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------section-three-how-it-works------------------>
+
+  <section class="how-it-works-section">
+    <div class="three-images-container container">
+      <p class="how-it-works-text">How it works</p>
+      <div class="row mt-5">
+        <div class="col-lg-4">
+          <div class="three-image-main-div">
+            <div class="three-image-div">
+              <img class="d-block mx-auto three-images" src="./assets/images/works_image_one.png" alt="round-image" />
+            </div>
+
+
+            <div class="how-it-works-text-div text-center my-5">
+              <p class="work-main-bold-text">Adapt your menu items</p>
+              <p class="works-explain-text">
+                Easily adapt your menu using the webflow CMS and allow
+                customers to browse your items.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="three-image-main-div">
+            <div class="three-image-div">
+              <img class="d-block mx-auto three-images" src="./assets/images/works_image_two.png" alt="round-image" />
+            </div>
+
+
+            <div class="how-it-works-text-div text-center my-5">
+              <p class="work-main-bold-text">Accept online orders & takeout</p>
+              <p class="works-explain-text">
+                Let your customers order and pay via the powerful ecommerce system, or simple let them call your store.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="three-image-main-div">
+            <div class="three-image-div">
+              <img class="d-block mx-auto three-images" src="./assets/images/works_image_three.png" alt="round-image" />
+            </div>
+
+
+            <div class="how-it-works-text-div text-center my-5">
+              <p class="work-main-bold-text">Manage delivery or takeout</p>
+              <p class="works-explain-text">
+                Manage your own logistics and take orders simply through the ecommerce system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!------------------------------browse-our-menu-section------------------------->
+
+  <section class="browse-menu-section">
+    <div class="container">
+      <p class="how-it-works-text text-center">
+        Browse our menu
       </p>
-    </section>
-
-    <!----------------------------------main-navbar-section--------------------------------->
-
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light disp-navbar">
-      <div class="container">
-        <div class="logo-div">
-          <a class="navbar-brand" href="./index.php">
-            <img
-              class="logo-nav-image"
-              src="./assets/images/demo.png"
-              alt="web-Logo"
-            />
-          </a>
-        </div>
-
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="navbar-collapse collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="#">Order</a>
-            </li>
-
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="#">Company</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-contact" href="#">Contact </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link cart" href="#">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
+      <p class="browse-explain-text">
+        Use our menu to place an order online, or phone our store to <br>
+        place a pickup order. Fast and fresh food.
+      </p>
+      <div class="row">
+        <div id="buttonContainer" class="button-division my-5 d-block mx-auto">
+          <!-- <button class="browse-button " onclick="filterSelection('all')">All</button> -->
+          <button class="browse-button active-one" onclick="filterSelection('burger')">Burgers</button>
+          <button class="browse-button mx-lg-4" onclick="filterSelection('sides')">Slides</button>
+          <button class="browse-button" onclick="filterSelection('drinks')">Drinks</button>
         </div>
       </div>
-    </nav>
 
-    <!-----------------------------section-one-burger----------------------------->
-
-    <section class="food-order-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="left-text-div-food-order">
-              <p class="main-food-order-text">
-                Beautiful food & takeaway,
-                <span class="green-text">delivered</span> to your door.
-              </p>
-              <p class="small-food-order-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500.
-              </p>
-              <div class="button-division mt-5">
-                <button class="place-order-button">Place an Order</button>
+      <div class="row">
+        <div class="col-lg-6 p-3 only burger">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/burger-dreams.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Burger Dreams
+                </p>
+                <p class="burger-price">
+                  $ 9.20 USD
+                </p>
               </div>
-
-              <div class="my-3">
-                <img src="./assets/images/place-order-image.svg" alt="" />
-              </div>
-              <p class="review-text">
-                <span class="green-text">4.8 out of 5</span> based on 2000+
-                reviews
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p>
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="right-image-burger-div">
-              <img src="./assets/images/first-section.png" alt="" />
+
+        </div>
+        <div class="col-lg-6 p-3 only burger">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/burger-waldo.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Burger Waldo
+                </p>
+                <p class="burger-price">
+                  $ 10.00 USD
+                </p>
+              </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!---------------------------------section-two-fresh-products------------------>
-
-    <section class="fresh-products-section">
-      <div class="container mx-lg-2">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="left-main-text-fresh-products-div">
-              <p class="fresh-products-green-text">
-                The home of <br />
-                fresh products
+        <div class="col-lg-6 p-3 only burger">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/burger-cali.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Burger Cali
+                </p>
+                <p class="burger-price">
+                  $ 8.00 USD
+                </p>
+              </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p>
-              <p class="small-food-order-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500.
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-3 only burger">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/burger-bacon-bali.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Burger Bacon Buddy
+                </p>
+                <p class="burger-price">
+                  $ 9.99 USD
+                </p>
+              </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p>
-              <div class="button-division my-5">
-                <button class="place-order-button">Learn about us</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="right-image-burger-div">
-              <img
-                src="./assets/images/fresh-products-image.png"
-                alt="fresh-products-image"
-              />
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!---------------------------------section-three-how-it-works------------------>
-
-    <section class="how-it-works-section">
-      <div class="three-images-container container">
-        <p class="how-it-works-text">How it works</p>
-        <div class="row mt-5">
-          <div class="col-lg-4">
-            <div class="three-image-main-div">
-              <div class="three-image-div">
-                <img class="d-block mx-auto three-images" src="./assets/images/works_image_one.png" alt="round-image"/>
-              </div>
-              
-
-              <div class="how-it-works-text-div text-center my-5">
-                <p class="work-main-bold-text">Adapt your menu items</p>
-                <p class="works-explain-text">
-                  Easily adapt your menu using the webflow CMS and allow
-                  customers to browse your items.
-                </p>
-              </div>
+        <div class="col-lg-6 p-3 only burger">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/burger-spicy.png" alt="image">
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="three-image-main-div">
-              <div class="three-image-div">
-                <img class="d-block mx-auto three-images" src="./assets/images/works_image_two.png" alt="round-image"/>
-              </div>
-              
-
-              <div class="how-it-works-text-div text-center my-5">
-                <p class="work-main-bold-text">Accept online orders & takeout</p>
-                <p class="works-explain-text">
-                  Let your customers order and pay via the powerful ecommerce system, or simple let them call your store.
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Burger Spicy
+                </p>
+                <p class="burger-price">
+                  $ 9.20 USD
                 </p>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="three-image-main-div">
-              <div class="three-image-div">
-                <img class="d-block mx-auto three-images" src="./assets/images/works_image_three.png" alt="round-image"/>
-              </div>
-              
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
 
-              <div class="how-it-works-text-div text-center my-5">
-                <p class="work-main-bold-text">Manage delivery or takeout</p>
-                <p class="works-explain-text">
-                  Manage your own logistics and take orders simply through the ecommerce system.
-                </p>
-              </div>
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="col-lg-6 p-3 only burger">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/burger-classic.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Burger Classic
+                </p>
+                <p class="burger-price">
+                  $ 8.00 USD
+                </p>
+              </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
 
 
-    <!------------------------------browse-our-menu-section------------------------->
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
 
-    <section class="browse-menu-section">
-      <div class="container">
-        <p class="how-it-works-text text-center">
-          Browse our menu
-        </p>        
-        <p class="browse-explain-text">
-          Use our menu to place an order online, or phone our store to <br>
-          place a pickup order. Fast and fresh food.
-        </p>
-        <div class="row">
-          <div id="buttonContainer" class="button-division my-5 d-block mx-auto">
-            <!-- <button class="browse-button " onclick="filterSelection('all')">All</button> -->
-            <button class="browse-button active-one" onclick="filterSelection('burger')">Burgers</button>
-            <button class="browse-button mx-lg-4" onclick="filterSelection('sides')">Slides</button>
-            <button class="browse-button" onclick="filterSelection('drinks')">Drinks</button>
+
+            </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6 p-3 only burger">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/burger-dreams.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Burger Dreams
-                  </p>
-                  <p class="burger-price">
-                    $ 9.20 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
-
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
-              </div>
+        <!-------------------------------------------Sides----------------------------->
+        <div class="col-lg-6 p-3 only sides">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/Salad-Ceaser.png" alt="image">
             </div>
-
-          </div>
-          <div class="col-lg-6 p-3 only burger">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/burger-waldo.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Burger Waldo
-                  </p>
-                  <p class="burger-price">
-                    $ 10.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Salad Ceaser
                 </p>
-
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
+                <p class="burger-price">
+                  $ 6.00 USD
+                </p>
               </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
-          <div class="col-lg-6 p-3 only burger">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/burger-cali.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Burger Cali
-                  </p>
-                  <p class="burger-price">
-                    $ 8.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+        <div class="col-lg-6 p-3 only sides ">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/Beans-slow-cooked.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Beans Slow Cooked
                 </p>
-
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
+                <p class="burger-price">
+                  $ 4.00 USD
+                </p>
               </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
-          <div class="col-lg-6 p-3 only burger">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/burger-bacon-bali.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Burger Bacon Buddy
-                  </p>
-                  <p class="burger-price">
-                    $ 9.99 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+        <div class="col-lg-6 p-3 only sides ">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/fries-cheese.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Fried Cheese
                 </p>
-
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
+                <p class="burger-price">
+                  $ 5.00 USD
+                </p>
               </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
-          <div class="col-lg-6 p-3 only burger">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/burger-spicy.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Burger Spicy
-                  </p>
-                  <p class="burger-price">
-                    $ 9.20 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+        <div class="col-lg-6 p-3 only sides ">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/fries-rustic.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Fries Rustic
                 </p>
-
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
+                <p class="burger-price">
+                  $ 4.00 USD
+                </p>
               </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
-          <div class="col-lg-6 p-3 only burger">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/burger-classic.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Burger Classic
-                  </p>
-                  <p class="burger-price">
-                    $ 8.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
+        </div>
 
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
+        <!--------------------------Drinks----------------------------->
+        <div class="col-lg-6 p-3 only drinks">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/drink-fig-lime.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Drink Fig & Lime
+                </p>
+                <p class="burger-price">
+                  $ 4.00 USD
+                </p>
               </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
-
-          <!-------------------------------------------Sides----------------------------->
-          <div class="col-lg-6 p-3 only sides">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/Salad-Ceaser.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Salad Ceaser
-                  </p>
-                  <p class="burger-price">
-                    $ 6.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+        <div class="col-lg-6 p-3 only drinks">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/drink-liquor.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Drink Liquor
                 </p>
-
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
+                <p class="burger-price">
+                  $ 7.00 USD
+                </p>
               </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
-          <div class="col-lg-6 p-3 only sides ">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/Beans-slow-cooked.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Beans Slow Cooked
-                  </p>
-                  <p class="burger-price">
-                    $ 4.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+        <div class="col-lg-6 p-3 only drinks">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/drink-lime.png" alt="image">
+            </div>
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Drink Lime
                 </p>
-
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
+                <p class="burger-price">
+                  $ 4.00 USD
+                </p>
               </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+
+
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
+
+
             </div>
           </div>
-          <div class="col-lg-6 p-3 only sides ">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/fries-cheese.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Fried Cheese
-                  </p>
-                  <p class="burger-price">
-                    $ 5.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
-
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
-              </div>
+        </div>
+        <div class="col-lg-6 p-3 only drinks">
+          <div class="main-burger-div p-4">
+            <div class="burger_image_div">
+              <img class="burger_image" src="./assets/images/drink-cola.png" alt="image">
             </div>
-          </div>
-          <div class="col-lg-6 p-3 only sides ">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/fries-rustic.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Fries Rustic
-                  </p>
-                  <p class="burger-price">
-                    $ 4.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <div class="burger-explain-div">
+              <div class="burger-item-price">
+                <p class="burger-type">
+                  Drink Cola
                 </p>
-
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
-              </div>
-            </div>
-          </div>
-
-          <!--------------------------Drinks----------------------------->
-          <div class="col-lg-6 p-3 only drinks">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/drink-fig-lime.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Drink Fig & Lime
-                  </p>
-                  <p class="burger-price">
-                    $ 4.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                <p class="burger-price">
+                  $ 3.00 USD
                 </p>
+              </div>
+              <p class="burger-explanation">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
 
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 p-3 only drinks">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/drink-liquor.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Drink Liquor
-                  </p>
-                  <p class="burger-price">
-                    $ 7.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
 
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 p-3 only drinks">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/drink-lime.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Drink Lime
-                  </p>
-                  <p class="burger-price">
-                    $ 4.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
+              <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
+              <button type="button" class="btn btn-info">Add To Cart</button>
 
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 p-3 only drinks">
-            <div class="main-burger-div p-4">
-              <div class="burger_image_div">
-                <img class="burger_image" src="./assets/images/drink-cola.png" alt="image">
-              </div>
-              <div class="burger-explain-div">
-                <div class="burger-item-price">
-                  <p class="burger-type">
-                    Drink Cola
-                  </p>
-                  <p class="burger-price">
-                    $ 3.00 USD
-                  </p>
-                </div>
-                <p class="burger-explanation">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
 
-                
-                  <input class="item-quatity" type="number" value="1" id="quantity" name="quantity" min="1" max="5">
-                <button type="button" class="btn btn-info">Add To Cart</button>
-               
-                
-              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-    </section>
+  </section>
 
-    <!-------------------------food-order-online-section--------------------------->
-    <section class="order-online-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="order-online-image-div">
-              <img class="order-online-image" src="./assets/images/order-online-image.png" alt="image-order-online">
-              <img class="second-image-order-online" src="./assets/images/order-online-second-image.svg" alt="second-image-order-online">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="order-online-text-div">
-              <p class="green-main-text">Order online with our simple checkout.</p>
-              <p class="order-online-explain-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
-              </p>
-              <button class="place-order-button mobile-faq">See our FAQ</button>
-            </div>
+  <!-------------------------food-order-online-section--------------------------->
+  <section class="order-online-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="order-online-image-div">
+            <img class="order-online-image" src="./assets/images/order-online-image.png" alt="image-order-online">
+            <img class="second-image-order-online" src="./assets/images/order-online-second-image.svg"
+              alt="second-image-order-online">
           </div>
         </div>
-        
-      </div>
-    </section>
-
-    <!---------------------------takeaway-food-section--------------------------------->
-    <section class="fresh-products-section">
-      <div class="container mx-lg-2">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="left-main-text-fresh-products-div">
-              <p class="fresh-products-green-text">
-                Call our store and takeaway when it suits you best.
-              </p>
-              <p class="small-food-order-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500.
-              </p>
-              <div class="button-division my-5">
-                <button class="place-order-button">Ph. +61 233 2333</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="right-image-burger-div">
-              <img src="./assets/images/takeaway-image.png" alt="takeaway-image">
-            </div>
+        <div class="col-lg-6">
+          <div class="order-online-text-div">
+            <p class="green-main-text">Order online with our simple checkout.</p>
+            <p class="order-online-explain-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500.
+            </p>
+            <button class="place-order-button mobile-faq">See our FAQ</button>
           </div>
         </div>
       </div>
-    </section>
 
-    <!----------------------------local-business-support-section------------------->
+    </div>
+  </section>
 
-    <section class="local-business-support-section">
-      <div class="container local-business-container">
-        <div class="row">
-          <div class="col-lg-6 local-business-image">
-            
-            
-          </div>
-          <div class="col-lg-6">
-            <div class="support-good-friends-div">
-              <p class="support-local-business-text">
-                <span class="only-support-text">Support</span> good food <br> and local business.
-              </p>
-              <button class="order-now-button mt-3">Order Now</button>
+  <!---------------------------takeaway-food-section--------------------------------->
+  <section class="fresh-products-section">
+    <div class="container mx-lg-2">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="left-main-text-fresh-products-div">
+            <p class="fresh-products-green-text">
+              Call our store and takeaway when it suits you best.
+            </p>
+            <p class="small-food-order-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500.
+            </p>
+            <div class="button-division my-5">
+              <button class="place-order-button">Ph. +61 233 2333</button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!--------------------------------footer-section------------------------------------>
-
-    <section class="footer-section">
-      <div class="container-fluid px-lg-5 footer-container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="footer-logo-div">
-              <img class="footer-logo-image" src="./assets/images/nav-logo.svg" alt="footer-logo-svg">
-              <p class="footer-logo-text mt-4">
-                Takeaway & Delivery template <br>
-                for small - medium businesses. 
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="company-info-div">
-              <p class="bold-main-text">COMPANY</p>
-              <p><a href="#" class="footer-links">Home</a></p>
-              <p><a href="#" class="footer-links">Order</a></p>
-              <p><a href="#" class="footer-links">FAQ</a></p>
-              <p><a href="#" class="footer-links">Contact</a></p>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="company-info-div">
-              <p class="bold-main-text">TEMPLATE</p>
-              <p><a href="#" class="footer-links">Style Guide</a></p>
-              <p><a href="#" class="footer-links">Changelog</a></p>
-              <p><a href="#" class="footer-links">Licence</a></p>
-              <p><a href="#" class="footer-links">Webflow University</a></p>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="company-info-div">
-              <p class="bold-main-text">FLOWBASE </p>
-              <p><a href="#" class="footer-links">More Cloneables</a></p>
-              
-            </div>
+        <div class="col-lg-6">
+          <div class="right-image-burger-div">
+            <img src="./assets/images/takeaway-image.png" alt="takeaway-image">
           </div>
         </div>
-      
       </div>
+    </div>
+  </section>
 
-      <hr class="border-footer">
-      
-      <div class="container-fluid px-lg-5 footer-icon-container">
-        <div class="footer-icon-div">
-          <div class="footer-left">
-            <p class="mb-0">Build by <span><a href="#">Flowbase</a></span> Powered by <span><a href="#">Webflow</a></span></p>
+  <!----------------------------local-business-support-section------------------->
+
+  <section class="local-business-support-section">
+    <div class="container local-business-container">
+      <div class="row">
+        <div class="col-lg-6 local-business-image">
+
+
+        </div>
+        <div class="col-lg-6">
+          <div class="support-good-friends-div">
+            <p class="support-local-business-text">
+              <span class="only-support-text">Support</span> good food <br> and local business.
+            </p>
+            <button class="order-now-button mt-3">Order Now</button>
           </div>
-          <div class="footer-right">
-            
-            
-            
-            <a href="#" class="footer-icon-links"><img src="./assets/images/insta-logo.svg"    class="footer-logo-images" alt="instagram-logo"></a>
-            <a href="#" class="footer-icon-links"><img src="./assets/images/twitter-logo.svg"  class="footer-logo-images" alt="twitter-logo"></a>
-            <a href="#" class="footer-icon-links"><img src="./assets/images/you-tube-logo.svg" class="footer-logo-images" alt="youtube-logo"></a>
-
-
-          </div>
-         
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--------------------------------footer-script------------------------------------->
+  <!--------------------------------footer-section------------------------------------>
 
-    <script src="./assets/js/main.js"></script>
-  </body>
+  <section class="footer-section">
+    <div class="container-fluid px-lg-5 footer-container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="footer-logo-div">
+            <img class="footer-logo-image" src="./assets/images/nav-logo.svg" alt="footer-logo-svg">
+            <p class="footer-logo-text mt-4 ">
+              Takeaway & Delivery template <br>
+              for small - medium businesses.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-4 ">
+          <div class="company-info-div">
+            <p class="bold-main-text">COMPANY</p>
+            <p><a href="#" class="footer-links">Home</a></p>
+            <p><a href="#" class="footer-links">Order</a></p>
+            <p><a href="#" class="footer-links">FAQ</a></p>
+            <p><a href="#" class="footer-links">Contact</a></p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-4">
+          <div class="company-info-div">
+            <p class="bold-main-text">TEMPLATE</p>
+            <p><a href="#" class="footer-links">Style Guide</a></p>
+            <p><a href="#" class="footer-links">Changelog</a></p>
+            <p><a href="#" class="footer-links">Licence</a></p>
+            <p><a href="#" class="footer-links">Webflow University</a></p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-4">
+          <div class="company-info-div">
+            <p class="bold-main-text">FLOWBASE </p>
+            <p><a href="#" class="footer-links">More Cloneables</a></p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-footer">
+
+    <div class="container-fluid px-lg-5 footer-icon-container">
+      <div class="footer-icon-div">
+        <div class="footer-left">
+          <p class="mb-0">Build by <span><a href="#">Flowbase</a></span> Powered by <span><a href="#">Webflow</a></span>
+          </p>
+        </div>
+        <div class="footer-right">
+
+
+
+          <a href="#" class="footer-icon-links"><img src="./assets/images/insta-logo.svg" class="footer-logo-images"
+              alt="instagram-logo"></a>
+          <a href="#" class="footer-icon-links"><img src="./assets/images/twitter-logo.svg" class="footer-logo-images"
+              alt="twitter-logo"></a>
+          <a href="#" class="footer-icon-links"><img src="./assets/images/you-tube-logo.svg" class="footer-logo-images"
+              alt="youtube-logo"></a>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------footer-script------------------------------------->
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>

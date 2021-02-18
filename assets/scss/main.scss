@@ -155,7 +155,7 @@
   background-size: 96% 55%;
   padding: 140px 3%;
   background-position: center;
-  @media #{$mobile} {
+  @media #{$mobile , $fold} {
     @include section-top-bottom-margin-remove;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -342,8 +342,8 @@
   @media #{$mobile} {
     padding: 59px 15px;
   }
-  @media #{$mobile} {
-
+  @media #{$fold} {
+    padding:40px 8px;
   }
 }
 
@@ -364,6 +364,12 @@
   @media #{$ipad , $surface} {
     background-size: cover;
     height: 520px;
+    background-clip: content-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @media #{$fold} {
+    height: 200px;
     background-clip: content-box;
     padding-top: 15px;
     padding-bottom: 15px;

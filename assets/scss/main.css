@@ -3,6 +3,12 @@
   background-color: #35b8be;
 }
 
+@media only screen and (min-width: 281px) and (max-width: 425px) {
+  .top-nav-section {
+    display: none;
+  }
+}
+
 .top-nav-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,6 +26,101 @@
   background-image: url("../images/cart-background-image.svg");
   padding: 10px;
   background-color: yellow;
+}
+
+.footer-section {
+  margin-top: 30px;
+  background-color: #f5fbfc;
+  background-image: url("../images/footer-background-image.svg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-container {
+  padding-top: 100px;
+}
+
+.footer-logo-image {
+  max-width: 7%;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 425px) {
+  .footer-logo-image {
+    max-width: 15%;
+  }
+}
+
+.footer-logo-text {
+  color: #546285;
+  font-size: 18px;
+}
+
+.footer-links {
+  color: #546285;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-links:hover {
+  text-decoration: none;
+}
+
+.bold-main-text {
+  color: #08090a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.border-footer {
+  border-top: 0.5px solid rgba(126, 130, 143, 0.09);
+  margin-bottom: 0px;
+  margin-top: 100px;
+  width: 92%;
+}
+
+.footer-icon-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 425px) {
+  .footer-icon-div {
+    display: block;
+  }
+}
+
+.footer-logo-images {
+  width: 18px;
+}
+
+.footer-icon-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer-icon-links {
+  padding: 5px 10px 10px 10px;
+  border: 1px solid rgba(126, 130, 143, 0.09);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+@media only screen and (min-width: 281px) and (max-width: 425px) {
+  .footer-left {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 281px) and (max-width: 425px) {
+  .footer-right {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 .main-food-order-text {
@@ -419,6 +520,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-clip: content-box;
 }
 
 @media only screen and (min-width: 281px) and (max-width: 425px) {

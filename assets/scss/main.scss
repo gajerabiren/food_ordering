@@ -4,7 +4,7 @@
 //navigation-bar and footer
 
 @import "navigation";
-
+@import "footer";
 //section-one
 
 .main-food-order-text {
@@ -352,6 +352,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-clip: content-box;
   
   @media #{$mobile} {
     background-size: cover;

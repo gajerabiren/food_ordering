@@ -1,6 +1,9 @@
 .top-nav-section{
     background-image: url("../images/top-nav-image.svg");
     background-color: #35b8be;
+    @media #{$mobile} {
+      display: none;
+    }
 }
 .top-nav-text{
     display: flex;
